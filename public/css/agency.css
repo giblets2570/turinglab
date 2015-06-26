@@ -156,7 +156,7 @@ fieldset[disabled] .btn-xl.active {
     background-color: #fff
 }
 .navbar-default {
-    background-color: #222;
+    background-color: #2f7ac7;
     border-color: #2f7ac7
 }
 .navbar-default .navbar-brand {
@@ -574,7 +574,7 @@ aside.clients img {
     margin: 50px auto
 }
 section#contact {
-    background-color: #222;
+    background-color: #2f7ac7;
     background-image: url(../img/map-image.png);
     background-position: center;
     background-repeat: no-repeat
@@ -726,7 +726,7 @@ ul.social-buttons li a:active {
 .portfolio-modal .close-modal .lr .rl {
     height: 75px;
     width: 1px;
-    background-color: #222;
+    background-color: #2f7ac7;
     transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
@@ -778,4 +778,9 @@ body {
     font-style: italic;
     font-size: 16px;
     margin: 0
+}
+
+.client-logo {
+    margin: auto;
+    max-width: 200px;
 }
