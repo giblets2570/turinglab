@@ -252,13 +252,14 @@ header .intro-text {
 header .intro-text .intro-lead-in {
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: italic;
-    font-size: 22px;
-    line-height: 22px;
+    font-size: 30px;
+    line-height: 35px;
     margin-bottom: 25px;
     background-color: #2f7ac7;
     border-radius: 10px;
     padding: 10px;
     opacity: 0.9;
+    
 }
 header .intro-text .intro-heading {
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -278,7 +279,8 @@ header .intro-text .intro-heading {
         font-style: italic;
         font-size: 40px;
         line-height: 40px;
-        margin-bottom: 25px
+        margin-bottom: 25px;
+        
     }
     header .intro-text .intro-heading {
         font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -787,4 +789,36 @@ body {
     max-width: 200px;
     padding: 10px;
     }
+}
+
+
+/* FULL SCREEN STUFF */
+
+.header-fixed{
+    min-height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+body, html, main {
+    /* important */
+    height: 100%;
+}
+
+.center-header {
+    position: absolute;
+      left: 50%;
+      top: 50%;
+      bottom: auto;
+      right: auto;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      -moz-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+      -o-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      text-align: center;
+      width: 70%;
+      max-width: 1170px;
 }
