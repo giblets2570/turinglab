@@ -780,7 +780,11 @@ body {
     margin: 0
 }
 
-.client-logo {
+
+@media screen and (max-width: 979px) {
+    .client-logo {
     margin: auto;
     max-width: 200px;
+    padding: 10px;
+    }
 }
