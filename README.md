@@ -23,6 +23,6 @@ To ssh into aws server instance:
   3. change ownership to only you ```chmod -R 700 ~/.ssh/downloadedkey.pem```
   4. ssh into server. Username:ubuntu ```ssh -i ~/.ssh/downloadedkey.pem ubuntu@ec2-52-27-120-46.us-west-2.compute.amazonaws.com```
 
-NB - you can find computername to ssh to on aws [console](https://us-west-2.console.aws.amazon.com) and clicking on the instances tab
+NB - you can find computername to ssh to on aws [console](https://us-west-2.console.aws.amazon.com/ec2) -> instances tab -> click on the instance. IP and nameserver are there.
 
 
