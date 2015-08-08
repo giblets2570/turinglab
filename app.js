@@ -49,6 +49,8 @@ app.configure('development', function(){
 app.engine('html', require('ejs').renderFile);
 //
 
+require('./app/routes')(app,express); // configure our routes
+
 // --- ROUTES ---
 // set the home page route
 app.get('/', function(req, res) {
@@ -77,8 +79,6 @@ app.post('/subscribe', function(req, res){
         }
     })
 });
-
-
 
 http.createServer(app).listen(app.get('port'), function() {
     console.log('Our app is running on http://localhost: ' + app.get('port'));

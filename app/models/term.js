@@ -10,53 +10,113 @@ var termSchema = mongoose.Schema({
     end: Date,
     name: String,
     monday:{
-    	morning: { 
-	        type: mongoose.Schema.ObjectId, 
-	        ref: 'Booking' 
-	    },
+    	morning: {
+    		booked: {
+    			type: Boolean, 
+    			default: false
+    		},
+    		ref: {
+    			type: mongoose.Schema.ObjectId, 
+		        ref: 'Booking' 
+		    }
+    	},
 	    afternoon: { 
-	        type: mongoose.Schema.ObjectId, 
-	        ref: 'Booking' 
+	        booked: {
+    			type: Boolean, 
+    			default: false
+    		},
+    		ref: {
+    			type: mongoose.Schema.ObjectId, 
+		        ref: 'Booking' 
+		    }
 	    }
     },
     tuesday:{
     	morning: { 
-	        type: mongoose.Schema.ObjectId, 
-	        ref: 'Booking' 
+	        booked: {
+    			type: Boolean, 
+    			default: false
+    		},
+    		ref: {
+    			type: mongoose.Schema.ObjectId, 
+		        ref: 'Booking' 
+		    }
 	    },
 	    afternoon: { 
-	        type: mongoose.Schema.ObjectId, 
-	        ref: 'Booking' 
+	        booked: {
+    			type: Boolean, 
+    			default: false
+    		},
+    		ref: {
+    			type: mongoose.Schema.ObjectId, 
+		        ref: 'Booking' 
+		    }
 	    }
     },
     wednesday:{
     	morning: { 
-	        type: mongoose.Schema.ObjectId, 
-	        ref: 'Booking' 
+	        booked: {
+    			type: Boolean, 
+    			default: false
+    		},
+    		ref: {
+    			type: mongoose.Schema.ObjectId, 
+		        ref: 'Booking' 
+		    }
 	    },
 	    afternoon: { 
-	        type: mongoose.Schema.ObjectId, 
-	        ref: 'Booking' 
+	        booked: {
+    			type: Boolean, 
+    			default: false
+    		},
+    		ref: {
+    			type: mongoose.Schema.ObjectId, 
+		        ref: 'Booking' 
+		    }
 	    }
     },
     thursday:{
     	morning: { 
-	        type: mongoose.Schema.ObjectId, 
-	        ref: 'Booking' 
+	        booked: {
+    			type: Boolean, 
+    			default: false
+    		},
+    		ref: {
+    			type: mongoose.Schema.ObjectId, 
+		        ref: 'Booking' 
+		    }
 	    },
 	    afternoon: { 
-	        type: mongoose.Schema.ObjectId, 
-	        ref: 'Booking' 
+	        booked: {
+    			type: Boolean, 
+    			default: false
+    		},
+    		ref: {
+    			type: mongoose.Schema.ObjectId, 
+		        ref: 'Booking' 
+		    }
 	    }
     },
     friday:{
     	morning: { 
-	        type: mongoose.Schema.ObjectId, 
-	        ref: 'Booking' 
+	        booked: {
+    			type: Boolean, 
+    			default: false
+    		},
+    		ref: {
+    			type: mongoose.Schema.ObjectId, 
+		        ref: 'Booking' 
+		    }
 	    },
 	    afternoon: { 
-	        type: mongoose.Schema.ObjectId, 
-	        ref: 'Booking' 
+	        booked: {
+    			type: Boolean, 
+    			default: false
+    		},
+    		ref: {
+    			type: mongoose.Schema.ObjectId, 
+		        ref: 'Booking' 
+		    }
 	    }
     }
 });

@@ -6,15 +6,22 @@ var mongoose = require('mongoose');
 // module.exports allows us to pass this to other files when it is called
 
 var bookingSchema = mongoose.Schema({
+    type: String,
     start: Date,
     end: Date,
     count: Number,
     numChildren: Number,
     age: String,
     email: String,
-    person: String,
+    person: {
+      type: String, 
+      default: ''
+    },
     school: String,
-    phone: String
+    phone: {
+      type: String, 
+      default: ''
+    },
 });
 
 module.exports = mongoose.model('Booking', bookingSchema);
