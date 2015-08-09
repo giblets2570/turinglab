@@ -1,17 +1,17 @@
-<div id="page-top" class="index"></div>
+<div id="page-top"></div>
 
 <!-- Navigation -->
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
+        <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top">
+            <a class="navbar-brand" href='' ng-click="scroll('page-top')">
                 <img class="logo" alt="Turing Lab" src="assets/images/logos/logo-white.png">
             </a>
         </div>
@@ -20,22 +20,22 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li class="hidden">
-                    <a href="#page-top"></a>
+                    <a href='' ng-click="scroll('page-top')"></a>
                 </li>
-                <li>
-                    <a class="page-scroll" href="#teaching">Teaching</a>
+                <li ng-class="navClass('teaching')">
+                    <a class="page-scroll" href='' ng-click="scroll('teaching')">Teaching</a>
                 </li>
-                <li>
-                    <a class="page-scroll" href="#values">Values</a>
+                <li ng-class="navClass('values')">
+                    <a class="page-scroll" href='' ng-click="scroll('values')">Values</a>
                 </li>
-                <li>
-                    <a class="page-scroll" href="#team">Team</a>
+                <li ng-class="navClass('team')">
+                    <a class="page-scroll" href='' ng-click="scroll('team')">Team</a>
                 </li>
-                <li>
-                    <a class="page-scroll" href="#portfolio">Register</a>
+                <li ng-class="navClass('portfolio')">
+                    <a class="page-scroll" href='' ng-click="scroll('portfolio')">Register</a>
                 </li>
-                <li>
-                    <a class="page-scroll" href="#video">Videos</a>
+                <li ng-class="navClass('video')">
+                    <a class="page-scroll" href='' ng-click="scroll('video')">Videos</a>
                 </li>
 <!--                     <li>
                     <a class="page-scroll" href="#about">About</a>
@@ -61,7 +61,7 @@
           <!-- <div class="row">
             <div class="intro-heading col-md-6 col-md-offset-3">It's Nice To Meet You</div>
             </div> -->
-            <a href="#portfolio" class="page-scroll btn btn-xl">Sign Up to Hear More</a>
+            <a href='' ng-click="scroll('portfolio')" class="page-scroll btn btn-xl">Sign Up to Hear More</a>
         </div>
     </div>
 </header>
@@ -348,7 +348,7 @@
                                 </div>
                             </form>
                             </div>
-                            <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[3]='CHLD';ftypes[3]='number';fnames[7]='AGES';ftypes[7]='text';fnames[4]='SUBS';ftypes[4]='dropdown';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+                            <!--<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[3]='CHLD';ftypes[3]='number';fnames[7]='AGES';ftypes[7]='text';fnames[4]='SUBS';ftypes[4]='dropdown';}(jQuery));var $mcj = jQuery.noConflict(true);</script>-->
                             <!--End mc_embed_signup-->
                         <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
                     </div>
