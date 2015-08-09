@@ -14,12 +14,14 @@ module.exports = function(grunt) {
       }
     },
 
+    // Inject all asset dependencies
     injector: {
       local_dependencies: {
         files: {
           'views/index.html': [
             'public/assets/**/*.js',
-            'public/assets/**/*.css'
+            'public/assets/**/*.css',
+            'public/app/**/*.js'
             ],
         }
       },
