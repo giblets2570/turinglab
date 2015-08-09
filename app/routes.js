@@ -127,7 +127,7 @@ module.exports = function(app,express) {
 			});
         })
 
-        // this is to get all the agents
+        // this is to get all the bookings
         .get(function(req, res){
             Booking.find(function(err,bookings){
             	if(err)
@@ -148,28 +148,7 @@ module.exports = function(app,express) {
             });
         })
 
-        // this is to create a new agent
-        .post(function(req, res){
-        	var booking = new Booking;
-            booking.type  = req.type;
-			booking.start  = req.start;
-			booking.end = req.end;
-			booking.count = req.count;
-			booking.numChildren = req.numChildren;
-			booking.age = req.age;
-			booking.email = req.email;
-			booking.person = req.person;
-			booking.school = req.school;
-			booking.phone = req.phone;
-
-			booking.save(function(err){
-				if(err)
-					return res.send(err);
-				return res.send({'message':'Booking created successfully','booking':booking})
-			});
-        })
-
-        // this is to get all the agents
+        // this is to get one booking
         .get(function(req, res){
             Booking.findById(req.params.booking_id,function(err,booking){
             	if(err)

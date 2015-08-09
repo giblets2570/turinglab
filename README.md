@@ -5,7 +5,8 @@ This is a repo to contain the first website, primarily for marketing purposes fo
 ## Installation
 1. Download the repository
 2. Install npm modules: `npm install`
-3. Start up the server: `node app.js`
+3. Install mongodb
+4. Start up the server: `node app.js`
 5. View in browser at http://localhost:3000
 
 ## TODO
