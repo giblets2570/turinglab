@@ -1,7 +1,7 @@
 {
   "name": "heroku-node",
   "description": "Our sample Node to Heroku app",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
     "start": "node app.js"
   },
@@ -9,8 +9,12 @@
     "node": "0.8.x"
   },
   "dependencies": {
+    "body-parser": "^1.13.3",
     "ejs": "0.8.x",
-    "express": "3.1.x",
-    "mailchimp": "0.9.x"
+    "express": "~4.4.5",
+    "mailchimp": "0.9.x",
+    "method-override": "^2.3.5",
+    "mongoose": "^4.1.1",
+    "request": "^2.60.0"
   }
 }
