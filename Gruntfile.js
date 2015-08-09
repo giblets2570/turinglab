@@ -14,6 +14,20 @@ module.exports = function(grunt) {
       }
     },
 
+    injector: {
+      local_dependencies: {
+        files: {
+          'views/index.html': [
+            'public/assets/**/*.js',
+            'public/assets/**/*.css'
+            ],
+        }
+      },
+      options : {
+        ignorePath: 'public'
+      }
+    },
+
     // Run a development express server 
     express: {
       dev: {
@@ -43,10 +57,14 @@ module.exports = function(grunt) {
 
   });
 
+  // dependencies
   grunt.loadNpmTasks('grunt-wiredep');
+  grunt.loadNpmTasks('grunt-injector');
+
+  // runner
   grunt.loadNpmTasks('grunt-express-server');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('default', ['wiredep','express','watch']);
+  grunt.registerTask('default', ['wiredep','injector','express','watch']);
 
 };
