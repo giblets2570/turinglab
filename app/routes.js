@@ -7,16 +7,14 @@ var Booking = require('./models/booking');
 module.exports = function(app,express) {
 
     // server routes ===========================================================
-    // handle things like api call
-    // authentication routes
-
+    // handle things like api calls
 
     var router = express.Router();
 
     // middleware to use for all requests
     router.use(function(req, res, next) {
         // do logging
-        console.log(req);
+        console.log("Request",req.body);
         next(); // make sure we go to the next routes and don't stop here
     });
 
@@ -31,6 +29,7 @@ module.exports = function(app,express) {
         })
 
         .post(function(req, res){
+
             var term = new Term();
             term.name = req.body.name;
             term.start = req.body.start;
