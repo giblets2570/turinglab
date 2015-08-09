@@ -3,6 +3,7 @@ angular.module('turingWeb').controller('TeamController',['$scope',TeamController
 function TeamController($scope){
 
     $scope.team = 
+
     [{
         name: 'Henry Miskin',
         image: 'assets/images/team/henrym.jpg',
@@ -13,7 +14,7 @@ function TeamController($scope){
             name: 'BEng Mechanical Engineering',
             university: 'University of Southampton'
         }],
-        linkedIn: 'https://uk.linkedin.com/in/hpgmiskin'
+        linkedin: 'https://uk.linkedin.com/in/hpgmiskin'
     },{
         name: 'Tom Murray',
         image: 'assets/images/team/tom.jpg',
@@ -24,7 +25,7 @@ function TeamController($scope){
             name: 'MSc Applied Mathematics',
             university: "Queen's University Belfast"
         }],
-        linkedIn: 'https://uk.linkedin.com/pub/tom-murray/b3/745/253',
+        linkedin: 'https://uk.linkedin.com/pub/tom-murray/b3/745/253',
     },{
         name: 'Sam Green',
         image: 'assets/images/team/sam.jpg',
@@ -35,7 +36,7 @@ function TeamController($scope){
             name: 'BA Architecture',
             university: 'University of Cambridge'
         }],
-        linkedIn: 'https://uk.linkedin.com/in/greensamuel'
+        linkedin: 'https://uk.linkedin.com/in/greensamuel'
     },{
         name: 'Priyav Shah',
         image: 'assets/images/team/priyav.jpg',
@@ -46,7 +47,7 @@ function TeamController($scope){
             name: 'BA Psychology',
             university: 'University of York'
         }],
-        linkedIn: 'https://uk.linkedin.com/in/priyavshah91'
+        linkedin: 'https://uk.linkedin.com/in/priyavshah91'
     },{
         name: 'Henry Lake',
         image: 'assets/images/team/henryl.jpg',
