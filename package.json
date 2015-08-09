@@ -10,11 +10,15 @@
   },
   "dependencies": {
     "body-parser": "^1.13.3",
+    "bower": "^1.4.1",
     "ejs": "0.8.x",
     "express": "~4.4.5",
     "mailchimp": "0.9.x",
     "method-override": "^2.3.5",
     "mongoose": "^4.1.1",
     "request": "^2.60.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5"
   }
 }

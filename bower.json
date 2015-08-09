@@ -1,0 +1,25 @@
+{
+  "name": "turinglab-web",
+  "version": "0.0.1",
+  "homepage": "http://turinglab.co.uk/",
+  "authors": [
+    "Sam Green",
+    "Tom Murray and Henry Miskin"
+  ],
+  "description": "Website for TuringLab information and signup to programming clubs",
+  "main": "app.js",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}
