@@ -41,19 +41,10 @@ module.exports = function(grunt) {
 
     // Watch for file changes when running server
     watch: {
-
-      // Update dependencies if they change
-      dependencies: {
-        files: ['public/lib/**/*'],
-        tasks: ['wiredep']
-      },
-
-      // Reload server if public files change (NOT YET WORKING)
-      publicFiles: {
-        files: ['public/**/*'],
-        options: {
-          livereload: true
-        }
+      files: ['public/**/*'],
+      tasks: ['wiredep','injector'],
+      options: {
+        livereload: true
       }
     }
 
