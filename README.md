@@ -9,6 +9,9 @@ This is a repo to contain the first website, primarily for marketing purposes fo
 4. Start up the server: `node app.js`
 5. View in browser at http://localhost:3000
 
+## MongoDB
+To run a local instance of mongodb use the command `./mongo.sh`. This will run a mongodb server in the background which can be accessed by the node application
+
 ## TODO
 1. Push to heroku (having problems)
 2. Link heroku to 'www.turinglab.co.uk'

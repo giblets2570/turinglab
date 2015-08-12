@@ -1,0 +1,43 @@
+{
+  "name": "turinglab-web",
+  "version": "0.0.1",
+  "homepage": "http://turinglab.co.uk/",
+  "authors": [
+    "Sam Green",
+    "Tom Murray and Henry Miskin"
+  ],
+  "description": "Website for TuringLab information and signup to programming clubs",
+  "main": "app.js",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.3",
+    "font-awesome": "~4.4.0",
+    "jquery.easing": "~1.3.1",
+    "angular-route": "~1.4.3",
+    "angular-bootstrap": "~0.13.2",
+    "bootstrap": "~3.3.5"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/js/bootstrap.min.js",
+        "dist/css/bootstrap.min.css"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "css/font-awesome.min.css"
+      ]
+    }
+  }
+}

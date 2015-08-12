@@ -1,0 +1,35 @@
+<!-- Team Section -->
+<div class="container" ng-controller="TeamController">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Meet our teachers</h2>
+            <h3 class="section-subheading-first text-muted">All of our teachers have Masters Degrees in Computer Science. But we are a diverse group, with a wide variety of undergraduate degrees in Physics, Psychology, Engineering, Mathematics and even Architecture.</h3>
+            <h3 class="section-subheading text-muted">
+The beauty of programming is that it is universally useful. Our teachers know this first hand having written programmes that model physics particles, map aerodynamics in crowded cities, read brain signals, use artificial intelligence to classify the complex real world, design buildings and complex web systems, connect the worlds emerging economies to banks.</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4" ng-repeat="member in team">
+            <div class="team-member">
+                <img ng-src="{{member.image}}" class="img-responsive img-circle" alt="">
+                <h4>{{member.name}}</h4>
+                <div ng-repeat="degree in member.degrees">
+                    <p class="text-muted degree">{{degree.name}}</p>
+                    <p class="text-muted">{{degree.university}}</p>
+                </div>
+
+                <ul class="list-inline social-buttons">
+                    <li ng-show="member.twitter">
+                        <a href="{{member.twitter}}"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li ng-show="member.facebook">
+                        <a href="{{member.facebook}}"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li ng-show="member.linkedin">
+                        <a href="{{member.linkedin}}"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
