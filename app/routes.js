@@ -104,6 +104,94 @@ module.exports = function(app,express) {
         	});
         });
 
+    router.route('/term/:term_id/booking')
+
+        .get(function(req,res){
+            Term.findById(req.params.term_id,function(err,term){
+                if(err)
+                    return res.send(err);
+                booking_ids = [];
+
+                if(term.monday){
+                    if(term.monday.morning){
+                        if(term.monday.morning.booked)
+                            booking_ids.push(term.monday.morning.ref);
+                    }
+                    if(term.monday.afternoon){
+                        if(term.monday.afternoon.booked)
+                            booking_ids.push(term.monday.afternoon.ref);
+                    }
+                }
+                if(term.tuesday){
+                    if(term.tuesday.morning){
+                        if(term.tuesday.morning.booked)
+                            booking_ids.push(term.tuesday.morning.ref);
+                    }
+                    if(term.tuesday.afternoon){
+                        if(term.tuesday.afternoon.booked)
+                            booking_ids.push(term.tuesday.afternoon.ref);
+                    }
+                }
+                if(term.wednesday){
+                    if(term.wednesday.morning){
+                        if(term.wednesday.morning.booked)
+                            booking_ids.push(term.wednesday.morning.ref);
+                    }
+                    if(term.wednesday.afternoon){
+                        if(term.wednesday.afternoon.booked)
+                            booking_ids.push(term.wednesday.afternoon.ref);
+                    }
+                }
+                if(term.thursday){
+                    if(term.thursday.morning){
+                        if(term.thursday.morning.booked)
+                            booking_ids.push(term.thursday.morning.ref);
+                    }
+                    if(term.thursday.afternoon){
+                        if(term.thursday.afternoon.booked)
+                            booking_ids.push(term.thursday.afternoon.ref);
+                    }
+                }
+                if(term.friday){
+                    if(term.friday.morning){
+                        if(term.friday.morning.booked)
+                            booking_ids.push(term.friday.morning.ref);
+                    }
+                    if(term.friday.afternoon){
+                        if(term.friday.afternoon.booked)
+                            booking_ids.push(term.friday.afternoon.ref);
+                    }
+                }
+                if(term.saturday){
+                    if(term.saturday.morning){
+                        if(term.saturday.morning.booked)
+                            booking_ids.push(term.saturday.morning.ref);
+                    }
+                    if(term.saturday.afternoon){
+                        if(term.saturday.afternoon.booked)
+                            booking_ids.push(term.saturday.afternoon.ref);
+                    }
+                }
+                if(term.sunday){
+                    if(term.sunday.morning){
+                        if(term.sunday.morning.booked)
+                            booking_ids.push(term.sunday.morning.ref);
+                    }
+                    if(term.sunday.afternoon){
+                        if(term.sunday.afternoon.booked)
+                            booking_ids.push(term.sunday.afternoon.ref);
+                    }
+                }
+
+                Booking.find({_id: {$in: booking_ids}},function(err,bookings){
+                    if(err)
+                        return res.send(err);
+                    return res.send(bookings);
+                })
+
+            });
+        });
+
     router.route('/booking')
 
         // this is to create a new agent

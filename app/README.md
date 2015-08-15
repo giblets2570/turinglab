@@ -12,10 +12,15 @@ This contains the api routes and the mongodb models
 	- PUT - adds a booking to a term
 	- DELETE - Deletes a terms
 
-3. `/api/booking`
+3. `/api/term/:term_id/booking`
+	- GET - returns the bookings in a term
+
+4. `/api/booking`
 	- GET - returns all the bookings
 	- POST - Adds a new booking to the database
 
-4. `/api/booking/:booking_id`
+5. `/api/booking/:booking_id`
 	- GET - returns the booking with id booking_id
 	- DELETE - Deletes a booking
+
+
