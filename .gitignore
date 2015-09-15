@@ -3,3 +3,6 @@ node_modules/
 
 #Database Folder
 database/
+
+#Bower Libraries
+public/lib/
