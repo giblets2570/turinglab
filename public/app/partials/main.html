@@ -1,55 +1,7 @@
 <div id="page-top"></div>
 
 <!-- Navigation -->
-<nav class="navbar navbar-default turing-navbar navbar-fixed-top">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href='' ng-click="scroll('page-top')">
-                <img class="header-logo" src="assets/images/logos/full-logo-blue.png"></img>
-            </a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="hidden">
-                    <a href='' ng-click="scroll('page-top')"></a>
-                </li>
-                <li ng-class="navClass('teaching')">
-                    <a class="page-scroll" href='' ng-click="scroll('teaching')">Teaching</a>
-                </li>
-                <li ng-class="navClass('values')">
-                    <a class="page-scroll" href='' ng-click="scroll('values')">Values</a>
-                </li>
-                <li ng-class="navClass('team')">
-                    <a class="page-scroll" href='' ng-click="scroll('team')">Team</a>
-                </li>
-                <li ng-class="navClass('portfolio')">
-                    <a class="page-scroll" href='' ng-click="scroll('portfolio')">Register</a>
-                </li>
-                <li ng-class="navClass('video')">
-                    <a class="page-scroll" href='' ng-click="scroll('video')">Videos</a>
-                </li>
-<!--                     <li>
-                    <a class="page-scroll" href="#about">About</a>
-                </li> -->
-
-                <!-- <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
-                </li> -->
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-</nav>
+<div ng-include="'app/partials/navbar.html'"></div>
 
 <!-- Header Section -->
 <header class="header-fixed" ng-include="'app/partials/header.html'"></header>
