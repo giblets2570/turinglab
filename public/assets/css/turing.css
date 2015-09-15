@@ -2,8 +2,11 @@
     height: 100%;
 }
 
-.yellow {
-    color: #fed136;
+.yellow { color: #fed136;}
+.white { color: white;}
+
+.section-heading {
+    padding-bottom: 40px;
 }
 
 .turing-navbar  {
@@ -15,10 +18,8 @@
     background-color: #2A78BD;
     
     border-radius: 50%;
-    /*width: 60%;*/
-    /*padding-top: 60%;*/
-    width: 60vh;
-    height: 60vh;
+    width: 320px;
+    height: 320px;
     
     margin: auto;
 }
@@ -31,6 +32,7 @@
 .turing-tagline {
     height: 60%;
     padding: 20% 10%;
+    font-size: 21px;
 }
 
 .orb-logo {
