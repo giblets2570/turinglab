@@ -2,11 +2,16 @@
     height: 100%;
 }
 
+.blue { color: #2A78BD;}
 .yellow { color: #fed136;}
 .white { color: white;}
 
 .section-heading {
     padding-bottom: 40px;
+}
+
+.detail-text {
+    margin: 10px;
 }
 
 .turing-navbar  {
