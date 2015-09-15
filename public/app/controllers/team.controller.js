@@ -2,62 +2,70 @@ angular.module('turingWeb').controller('TeamController',['$scope',TeamController
 
 function TeamController($scope){
 
-    $scope.team = 
+    $scope.heading = 'Team';
 
-    [{
-        name: 'Henry Miskin',
-        image: 'assets/images/team/henrym.jpg',
-        degrees : [{
-            name: 'MSc Computer Science',
-            university: ' Imperial College London'
+    $scope.team = [
+        {
+            name: 'Henry Miskin',
+            image: 'assets/images/team/henrym.jpg',
+            degrees : [{
+                name: 'MSc Computer Science',
+                university: ' Imperial College London'
+            },{
+                name: 'BEng Mechanical Engineering',
+                university: 'University of Southampton'
+            }],
+            linkedin: 'https://uk.linkedin.com/in/hpgmiskin',
+            email: 'mailto:hpgmiskin@turinglab.co.uk'
+        // },{
+        //     name: 'Tom Murray',
+        //     image: 'assets/images/team/tom.jpg',
+        //     degrees : [{
+        //         name: 'MSc Computer Science',
+        //         university: ' Imperial College London'
+        //     },{
+        //         name: 'MSc Applied Mathematics',
+        //         university: "Queen's University Belfast"
+        //     }],
         },{
-            name: 'BEng Mechanical Engineering',
-            university: 'University of Southampton'
-        }],
-        linkedin: 'https://uk.linkedin.com/in/hpgmiskin'
-    },{
-        name: 'Tom Murray',
-        image: 'assets/images/team/tom.jpg',
-        degrees : [{
-            name: 'MSc Computer Science',
-            university: ' Imperial College London'
+            name: 'Sam Green',
+            about: 'Sam looks forward to passing on an enthusiasm for design and technology to a new generation of innovators.',
+            image: 'assets/images/team/sam.jpg',
+            degrees : [{
+                name: 'MSc Computer Science',
+                university: ' Imperial College London'
+            },{
+                name: 'BA Architecture',
+                university: 'University of Cambridge'
+            }],
+            linkedin: 'https://uk.linkedin.com/in/greensamuel',
+            email: 'mailto:sam@turinglab.co.uk'
         },{
-            name: 'MSc Applied Mathematics',
-            university: "Queen's University Belfast"
-        }],
-        linkedin: 'https://uk.linkedin.com/pub/tom-murray/b3/745/253',
-    },{
-        name: 'Sam Green',
-        image: 'assets/images/team/sam.jpg',
-        degrees : [{
-            name: 'MSc Computer Science',
-            university: ' Imperial College London'
+            name: 'Priyav Shah',
+            image: 'assets/images/team/priyav.jpg',
+            degrees : [{
+                name: 'MSc Computer Science',
+                university: ' Imperial College London'
+            },{
+                name: 'BA Psychology',
+                university: 'University of York'
+            }],
+            linkedin: 'https://www.linkedin.com/in/priyavshah91',
+            email: 'mailto:priyav@turinglab.co.uk'
         },{
-            name: 'BA Architecture',
-            university: 'University of Cambridge'
-        }],
-        linkedin: 'https://uk.linkedin.com/in/greensamuel'
-    },{
-        name: 'Priyav Shah',
-        image: 'assets/images/team/priyav.jpg',
-        degrees : [{
-            name: 'MSc Computer Science',
-            university: ' Imperial College London'
-        },{
-            name: 'BA Psychology',
-            university: 'University of York'
-        }],
-        linkedin: 'https://uk.linkedin.com/in/priyavshah91'
-    },{
-        name: 'Henry Lake',
-        image: 'assets/images/team/henryl.jpg',
-        degrees : [{
-            name: 'MSc Computer Science',
-            university: ' Imperial College London'
-        },{
-            name: 'MEng Physics',
-            university: 'Imperial College London'
-        }]
-    }];
+            name: 'Henry Lake',
+            about: 'Henry enjoys bringing games to life through application of physics.',
+            image: 'assets/images/team/henryl.jpg',
+            degrees : [{
+                name: 'MSc Computer Science',
+                university: ' Imperial College London'
+            },{
+                name: 'MEng Physics',
+                university: 'Imperial College London'
+            }],
+            // linkedin: 'https://uk.linkedin.com/in/hpgmiskin',
+            email: 'mailto:henry@turinglab.co.uk'
+        }
+    ];
 
 }
