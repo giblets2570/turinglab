@@ -4,6 +4,26 @@ function LaboratoriesController($scope){
 
     $scope.heading = 'Laboratories';
 
+    var numbers = ['','One','Two','Three','Four','Five','Six','Seven','Eight','Nine','Ten'];
+    var Price = function(cost,hours,number){
+        return {
+            cost: cost,
+            hours: hours,
+            number: numbers[number],
+            hourly: cost / (hours * number)
+        };
+    };
+
+    $scope.style = function(slots){
+        if (slots.length === 1){
+            return 'col-xs-12';
+        } else if (slots.length === 2){
+            return 'col-xs-6';
+        } else {
+            return 'col-xs-4';
+        };
+    };
+
     $scope.labs = [
     {
         name: 'Saturdays',
@@ -13,22 +33,13 @@ function LaboratoriesController($scope){
             {
                 name: 'Afternoon',
                 content: 'KS3 & Python',
-                time: '14.00 - 17.00'
+                time: '14.00 - 17.00',
+                prices: [Price(225,3,10),Price(30,3,1)]
             },{
                 name: 'Morning',
                 content: 'KS2 & Scratch',
-                time: '10.00 - 13.00'
-            }
-        ],
-        prices: [
-            {
-                cost: '£225',
-                about: '10 Sessions',
-                hourly: '£7.50'
-            },{
-                cost: '£30',
-                about: '1 Session',
-                hourly: '£10.00'
+                time: '10.00 - 13.00',
+                prices: [Price(225,3,10),Price(30,3,1)]
             }
         ]
     },{
@@ -39,18 +50,8 @@ function LaboratoriesController($scope){
             {
                 name: 'After-School',
                 content: 'KS3 & Python',
-                time: '2 hours'
-            }
-        ],
-        prices: [
-            {
-                cost: '£150',
-                about: '10 Sessions',
-                hourly: '£7.50'
-            },{
-                cost: '£20',
-                about: '1 Session',
-                hourly: '£10.00'
+                time: '2 hours',
+                prices: [Price(150,2,10),Price(20,2,1)]
             }
         ]
     },{
@@ -64,7 +65,8 @@ function LaboratoriesController($scope){
                 time: '1-3 hours'
             }
         ],
-        about: 'Contact Us'
+        about: 'Contact Us',
+        detail: 'Sometimes we offer these sessions for free'
     }
     ];
 

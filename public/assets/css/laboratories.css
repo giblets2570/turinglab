@@ -7,6 +7,10 @@
     padding: auto;
 }
 
+.lab-slot {
+    
+}
+
 .lab-sphere {
     color: #2A78BD;
     background-color: white;
@@ -18,11 +22,7 @@
     display: inline-block;
 }
 
-.lab-slot {
-
-}
-
-.lab-slot > h4 {
+.lab-sphere-text > h4 {
     margin-top: 0px;
 }
 
