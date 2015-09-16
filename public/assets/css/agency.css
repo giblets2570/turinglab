@@ -69,7 +69,7 @@ h6 {
     background-color: #fed136;
     border-color: #fed136;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-weight: 700
 }
 .btn-primary:hover,
@@ -113,7 +113,7 @@ fieldset[disabled] .btn-primary.active {
     background-color: #fed136;
     border-color: #fed136;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-weight: 700;
     border-radius: 3px;
     font-size: 18px;
@@ -187,7 +187,7 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-default .nav li a {
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-weight: 400;
     letter-spacing: 1px;
     color: #fff
@@ -263,7 +263,7 @@ header .intro-text .intro-lead-in {
 }
 header .intro-text .intro-heading {
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-weight: 700;
     font-size: 50px;
     line-height: 50px;
@@ -663,8 +663,8 @@ footer ul.quicklinks {
     margin-bottom: 0;
     line-height: 40px;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    text-transform: none
+    /*text-transform: uppercase;*/
+    /*text-transform: none*/
 }
 ul.social-buttons {
     margin-bottom: 0

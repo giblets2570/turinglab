@@ -2,6 +2,8 @@ angular.module('turingWeb').controller('MainController',['$scope','$location','$
 
 function MainController($scope,$location,$anchorScroll){
 
+    $scope.sections = ['overview','teaching','technology','team','laboratories','contact'];
+
     $scope.scroll = function(location){
         $location.hash(location);
         $anchorScroll();

@@ -24,28 +24,9 @@
                 <li class="hidden">
                     <a href='' ng-click="scroll('page-top')"></a>
                 </li>
-                <li ng-class="navClass('teaching')">
-                    <a class="page-scroll" href='' ng-click="scroll('teaching')">Teaching</a>
+                <li ng-class="navClass(section)" ng-repeat="section in sections">
+                    <a class="page-scroll text-capitalize" href='' ng-click="scroll(section)">{{section}}</a>
                 </li>
-                <li ng-class="navClass('values')">
-                    <a class="page-scroll" href='' ng-click="scroll('values')">Values</a>
-                </li>
-                <li ng-class="navClass('team')">
-                    <a class="page-scroll" href='' ng-click="scroll('team')">Team</a>
-                </li>
-                <li ng-class="navClass('portfolio')">
-                    <a class="page-scroll" href='' ng-click="scroll('portfolio')">Register</a>
-                </li>
-                <li ng-class="navClass('video')">
-                    <a class="page-scroll" href='' ng-click="scroll('video')">Videos</a>
-                </li>
-<!--                     <li>
-                    <a class="page-scroll" href="#about">About</a>
-                </li> -->
-
-                <!-- <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
-                </li> -->
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -69,7 +50,7 @@
 <!-- Team Section -->
 <section id="team" class="bg-light-gray" ng-include="'app/partials/team.html'"></section>
 
-<!-- Team Section -->
+<!-- Laboratories Section -->
 <section id="laboratories" class="bg-branding-blue" ng-include="'app/partials/laboratories.html'"></section>
 
 <!-- Contact Section -->

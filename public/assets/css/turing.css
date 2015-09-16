@@ -14,6 +14,10 @@ Colour Classes
 Override Classes
 ============================================================================= */
 
+section {
+    min-height: 100vh;
+}
+
 .section-heading {
     padding-bottom: 40px;
 }
