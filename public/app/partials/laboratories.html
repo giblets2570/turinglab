@@ -5,7 +5,27 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-xs-12 col-xs-offset-0 col-sm-5 col-sm-offset-1 col-md-3 col-md-offset-0" ng-repeat="lab in labs">
+        <div ng-class="lab.style" ng-repeat="lab in labs">
+            <div class="turing-lab white">
+                <h3>{{lab.name}}</h3>
+                <p class="lead">@ {{lab.location}}</p>
+                <div class="lab-slots col-xs-12">
+                    <div class="lab-sphere" ng-repeat="slot in lab.slots">
+                        <div class="lab-slot">
+                            <h4>{{slot.name}}</h4>
+                            <p>{{slot.content}}</p>
+                            <p>{{slot.time}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lab-prices col-xs-12">
+                    <div class="lab-price col-xs-6" ng-repeat="price in lab.prices">
+                        <h4>{{price.cost}}</h4>
+                        <strong>{{price.about}}</strong>
+                        <p>{{price.hourly}} per hour</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

@@ -1,0 +1,35 @@
+
+.turing-lab {
+    text-align: center;
+}
+
+.lab-slots {
+    padding: auto;
+}
+
+.lab-sphere {
+    color: #2A78BD;
+    background-color: white;
+
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+
+    display: inline-block;
+}
+
+.lab-slot {
+
+}
+
+.lab-slot > h4 {
+    margin-top: 0px;
+}
+
+.lap-prices {
+    padding: auto;
+}
+
+.lab-price {
+    width: 50%;
+}

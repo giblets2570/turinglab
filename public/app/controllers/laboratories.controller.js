@@ -8,6 +8,7 @@ function LaboratoriesController($scope){
     {
         name: 'Saturdays',
         location: 'Imperial College London',
+        style: 'col-md-6 col-xs-12',
         slots: [
             {
                 name: 'Afternoon',
@@ -33,6 +34,7 @@ function LaboratoriesController($scope){
     },{
         name: 'Weekdays',
         location: 'your local school',
+        style: 'col-md-3 col-xs-12',
         slots: [
             {
                 name: 'After-School',
@@ -54,6 +56,7 @@ function LaboratoriesController($scope){
     },{
         name: 'Workshop',
         location: 'your local school',
+        style: 'col-md-3 col-xs-12',
         slots: [
             {
                 name: 'During-School',
