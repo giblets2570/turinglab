@@ -14,16 +14,19 @@
       type="image/png" 
       href="assets/images/favicon.png">
 
-    <!-- bower:css -->
-    <link rel='stylesheet' href='/lib/font-awesome/css/font-awesome.min.css' />
-    <link rel='stylesheet' href='/lib/bootstrap/dist/css/bootstrap.min.css' />
-    <!-- endbower -->
+    <!-- build:css main.css -->
+        <!-- bower:css -->
+        <link rel='stylesheet' href='/lib/font-awesome/css/font-awesome.min.css' />
+        <link rel='stylesheet' href='/lib/bootstrap/dist/css/bootstrap.min.css' />
+        <!-- endbower -->
+    <!-- endbuild -->
 
-
-    <!-- injector:css -->
-    <link rel="stylesheet" href="/assets/css/agency.css">
-    <link rel="stylesheet" href="/assets/css/turing.css">
-    <!-- endinjector -->
+    <!-- build:css app.css -->
+        <!-- injector:css -->
+        <link rel="stylesheet" href="/assets/css/agency.css">
+        <link rel="stylesheet" href="/assets/css/turing.css">
+        <!-- endinjector -->
+    <!-- endbuild -->
 
 
     <!-- Custom Fonts -->
@@ -45,26 +48,30 @@
 
     <div ng-view class="full"></div>
 
-    <!-- bower:js -->
-    <script src="/lib/jquery/dist/jquery.js"></script>
-    <script src="/lib/angular/angular.js"></script>
-    <script src="/lib/jquery.easing/js/jquery.easing.js"></script>
-    <script src="/lib/angular-route/angular-route.js"></script>
-    <script src="/lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-    <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- endbower -->
+    <!-- build:js main.js -->
+        <!-- bower:js -->
+        <script src="/lib/jquery/dist/jquery.js"></script>
+        <script src="/lib/angular/angular.js"></script>
+        <script src="/lib/jquery.easing/js/jquery.easing.js"></script>
+        <script src="/lib/angular-route/angular-route.js"></script>
+        <script src="/lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+        <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- endbower -->
+    <!-- endbuild -->
 
-    <!-- injector:js -->
-    <script src="/assets/js/agency.js"></script>
-    <script src="/assets/js/jqBootstrapValidation.js"></script>
-    <script src="/app/app.modules.js"></script>
-    <script src="/app/app.routes.js"></script>
-    <script src="/app/controllers/main.controller.js"></script>
-    <script src="/app/controllers/team.controller.js"></script>
-    <script src="/app/controllers/video.controller.js"></script>
-    <script src="/app/services/booking.service.js"></script>
-    <script src="/app/services/term.service.js"></script>
-    <!-- endinjector -->
+    <!-- build:js app.js -->
+        <!-- injector:js -->
+        <script src="/assets/js/agency.js"></script>
+        <script src="/assets/js/jqBootstrapValidation.js"></script>
+        <script src="/app/app.modules.js"></script>
+        <script src="/app/app.routes.js"></script>
+        <script src="/app/controllers/main.controller.js"></script>
+        <script src="/app/controllers/team.controller.js"></script>
+        <script src="/app/controllers/video.controller.js"></script>
+        <script src="/app/services/booking.service.js"></script>
+        <script src="/app/services/term.service.js"></script>
+        <!-- endinjector -->
+    <!-- endbuild -->
 
 </body>
 

@@ -3,3 +3,7 @@ node_modules/
 
 #Database Folder
 database/
+
+public/lib
+public/dist
+.tmp/
