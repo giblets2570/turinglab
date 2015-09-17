@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href='' ng-click="scroll('')">
+            <a class="navbar-brand" href="#">
                 <img class="header-logo" src="assets/images/logos/full-logo-blue.png"></img>
             </a>
         </div>
@@ -17,7 +17,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li ng-class="navClass(section)" ng-repeat="section in sections">
-                    <a class="page-scroll text-capitalize" href='' ng-click="scroll(section)">{{section}}</a>
+                    <a class="page-scroll text-capitalize" href='' scroll-to="{{section}}" callback-after="scroll">{{section}}</a>
                 </li>
             </ul>
         </div>

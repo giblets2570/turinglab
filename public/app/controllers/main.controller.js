@@ -11,8 +11,10 @@ function MainController($scope,$rootScope,$location,$timeout,$anchorScroll){
         // 'contact'
     ];
 
-    $scope.scroll = function(section){
+    $scope.scroll = function(element){
+        var section = element.id;
         $location.hash(section);
+        $scope.$apply();
     };
 
     $scope.navClass = function(name){
@@ -24,11 +26,7 @@ function MainController($scope,$rootScope,$location,$timeout,$anchorScroll){
     };
 
     angular.element(document).ready(function(){
-        console.log('Hello World');
         var section = $location.hash();
-        // var element = angular.element(section);
-        // console.log(section,element);
-        console.log(section);
         $timeout(function(){
             $anchorScroll(section);
         });
