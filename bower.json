@@ -26,7 +26,8 @@
     "angular-route": "~1.4.3",
     "angular-bootstrap": "~0.13.2",
     "bootstrap": "~3.3.5",
-    "ionicons": "~2.0.1"
+    "ionicons": "~2.0.1",
+    "ngSmoothScroll": "~1.7.1"
   },
   "overrides": {
     "bootstrap": {
