@@ -32,12 +32,18 @@ function LaboratoriesController($scope){
                 name: 'Afternoon',
                 content: 'KS3 & Python',
                 time: '14.00 - 17.00',
-                prices: [Price(225,3,10),Price(30,3,1)]
+                prices: {
+                    left: Price(225,3,10),
+                    right: Price(30,3,1)
+                }
             },{
                 name: 'Morning',
                 content: 'KS2 & Scratch',
                 time: '10.00 - 13.00',
-                prices: [Price(225,3,10),Price(30,3,1)]
+                prices: {
+                    left: Price(225,3,10),
+                    right: Price(30,3,1)
+                }
             }
         ]
     },{
@@ -49,7 +55,10 @@ function LaboratoriesController($scope){
                 name: 'After-School',
                 content: 'KS3 & Python',
                 time: '2 hours',
-                prices: [Price(150,2,10),Price(20,2,1)]
+                prices: {
+                    left: Price(150,2,10),
+                    right: Price(20,2,1)
+                }
             }
         ]
     },{
