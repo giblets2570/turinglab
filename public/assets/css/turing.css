@@ -61,15 +61,30 @@ Turing Title Section
 .turing-orb {
     position: relative;
     background-color: #2A78BD;
-    
+
     border-radius: 50%;
     width: 320px;
     height: 320px;
+    min-width: 320px;
+    min-height: 320px;
 
     max-width: 100%;
     max-height: 100%;
-    
+
     margin: auto;
+}
+@media (max-width: 320px) {
+    .turing-orb {
+        width: 275px;
+        height: 275px;
+        min-width: 275px;
+        min-height: 275px;
+
+        max-width: 100%;
+        max-height: 100%;
+
+        margin: auto;
+    }
 }
 
 .turing-title {
