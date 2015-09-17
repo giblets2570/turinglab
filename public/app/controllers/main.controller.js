@@ -2,12 +2,19 @@ angular.module('turingWeb').controller('MainController',['$scope','$location','$
 
 function MainController($scope,$location,$anchorScroll){
 
-    $scope.sections = ['teaching','technology','team','laboratories','contact'];
+    $scope.sections = [
+        'overview',
+        'teaching',
+        'technology',
+        'team',
+        'laboratories'
+        // 'contact'
+    ];
 
-    $scope.scroll = function(location){
-        $location.hash(location);
-        $anchorScroll();
-    }
+    $scope.scrollDone = function(element){
+        $location.hash(element.id);
+        $scope.$apply();
+    };
 
     $scope.navClass = function(name){
         if ($location.hash() == name){
@@ -15,6 +22,11 @@ function MainController($scope,$location,$anchorScroll){
         } else {
             return '';
         }
-    }
+    };
+
+    // $scope.$on('$locationChangeSuccess', function() {
+    //     console.log($location.hash());
+    //     $anchorScroll();
+    // });
 
 }

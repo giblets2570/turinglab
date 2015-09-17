@@ -1,1 +1,1 @@
-var app = angular.module('turingWeb',['ngRoute']);
+var app = angular.module('turingWeb',['ngRoute','smoothScroll']);
