@@ -1,6 +1,6 @@
-angular.module('turingWeb').controller('MainController',['$scope','$document','$location','$timeout','$anchorScroll',MainController]);
+angular.module('turingWeb').controller('MainController',['$scope','$location','$timeout','$anchorScroll',MainController]);
 
-function MainController($scope,$document,$location,$timeout,$anchorScroll){
+function MainController($scope,$location,$timeout,$anchorScroll){
 
     $scope.sections = [
         'overview',
@@ -10,12 +10,6 @@ function MainController($scope,$document,$location,$timeout,$anchorScroll){
         'laboratories'
         // 'contact'
     ];
-
-    // $scope.locations = {};
-
-    // $document.on('scroll', function() {
-    //   console.log('Document scrolled to ', $document.scrollLeft(), $document.scrollTop());
-    // });
 
     $scope.scroll = function(element){
         var section = element.id;
