@@ -8,6 +8,7 @@ function TeamController($scope){
         {
             name: 'Henry Miskin',
             image: 'assets/images/team/henrym.jpg',
+            about: 'Henry wants to share his passion for problem solving in engineering and computing with upcoming inventors.',
             degrees : [{
                 name: 'MSc Computer Science',
                 university: ' Imperial College London'
@@ -42,6 +43,7 @@ function TeamController($scope){
             email: 'mailto:sam@turinglab.co.uk'
         },{
             name: 'Priyav Shah',
+            about: 'Priyav is driven by getting kids excited about the power of technology',
             image: 'assets/images/team/priyav.jpg',
             degrees : [{
                 name: 'MSc Computer Science',

@@ -57,7 +57,7 @@ h6 {
 }
 
 .bg-branding-blue {
-    background-color: #2f7ac7;
+    background-color: #2a78bd;
 }
 
 .bg-branding-yellow {
@@ -299,7 +299,6 @@ section h2.section-heading {
     margin-top: 0;
     margin-bottom: 15px
 }
-
 section h2.section-heading-yellow {
     font-size: 40px;
     margin-top: 0;
@@ -853,7 +852,7 @@ body, html, main {
       -o-transform: translateX(-50%) translateY(-50%);
       transform: translateX(-50%) translateY(-50%);
       text-align: center;
-      width: 70%;
+      width: 100%;
       max-width: 1170px;
 }
 
