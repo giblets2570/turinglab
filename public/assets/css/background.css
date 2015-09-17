@@ -1,0 +1,14 @@
+.page-break {
+    height: 60vh;
+    background-repeat: none;
+    background-attachment: fixed;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.group-discussion {
+    background-image: url(../images/background/group-discussion.jpg);
+}
