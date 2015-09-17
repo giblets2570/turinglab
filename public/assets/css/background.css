@@ -1,0 +1,48 @@
+.page-break {
+    height: 60vh;
+    background-repeat: none;
+    background-attachment: fixed;
+    /*background-position: center center;*/
+    background-position-x: 50%;
+    background-position-y: 80%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.code-groups {
+    background-image: url(../images/background/code-groups.jpg);
+}
+
+.group-discussion {
+    background-image: url(../images/background/group-discussion.jpg);
+}
+
+.group-milton {
+    background-image: url(../images/background/group-milton.jpg);
+}
+
+.happy-group {
+    background-image: url(../images/background/happy-group.jpg);
+}
+
+.henry-help {
+    background-image: url(../images/background/henry-help.jpg);
+}
+
+.henry-minecraft {
+    background-image: url(../images/background/henry-minecraft.jpg);
+}
+
+.henry-outside {
+    background-image: url(../images/background/henry-outside.jpg);
+}
+
+.sam-help {
+    background-image: url(../images/background/sam-help.jpg);
+}
+
+.sam-teach {
+    background-image: url(../images/background/sam-teach.jpg);
+}
