@@ -21,7 +21,8 @@ module.exports = function(grunt) {
           'views/index.html': [
             'public/assets/**/*.js',
             'public/assets/**/*.css',
-            'public/app/**/*.js'
+            'public/app/**/*.js',
+            'public/app/**/*.css'
             ],
         }
       },
@@ -34,17 +35,32 @@ module.exports = function(grunt) {
     useminPrepare: {
       html: 'views/index.html',
       options: {
-          dest: 'public/dist',
-          root: 'public'
+          root: 'public',
+          dest: 'dist'
       }
     },
     usemin: {
-      options: {
-        dirs: ['public/dist']
-        // assetsDirs: ['public']
-      },
       html: ['public/dist/**/*.html'],
-      css: ['public/dist/**/*.css']
+      css: ['public/dist/**/*.css'],
+      js: ['public/dist/**/*.js'],
+      options: {
+        dirs: ['dist'],
+        assetsDirs: ['public']
+      }
+    },
+
+    // Copy files into the distribution folder
+    copy: {
+      dist: {
+        expand: true,
+        dot: true,
+        cwd: 'public',
+        dest: 'public/dist',
+        src: [
+          'assets/images/*',
+          'index.html'
+        ]
+      }
     },
 
     // Run a development express server 
@@ -77,6 +93,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-filerev');
   grunt.loadNpmTasks('grunt-usemin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
   // runner
   grunt.loadNpmTasks('grunt-express-server');
@@ -88,7 +105,7 @@ module.exports = function(grunt) {
     'concat:generated',
     'cssmin:generated',
     'uglify:generated',
-    // 'filerev',
+    'copy',
     'usemin'
   ]);
 

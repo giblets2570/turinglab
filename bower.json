@@ -39,5 +39,6 @@
         "css/font-awesome.min.css"
       ]
     }
-  }
+  },
+  "devDependencies": {}
 }
