@@ -1,6 +1,6 @@
-angular.module('turingWeb').controller('MainController',['$scope','$location','$anchorScroll',MainController]);
+angular.module('turingWeb').controller('MainController',['$scope','$rootScope','$location','$timeout','$anchorScroll',MainController]);
 
-function MainController($scope,$location,$anchorScroll){
+function MainController($scope,$rootScope,$location,$timeout,$anchorScroll){
 
     $scope.sections = [
         'overview',
@@ -11,9 +11,8 @@ function MainController($scope,$location,$anchorScroll){
         // 'contact'
     ];
 
-    $scope.scrollDone = function(element){
-        $location.hash(element.id);
-        $scope.$apply();
+    $scope.scroll = function(section){
+        $location.hash(section);
     };
 
     $scope.navClass = function(name){
@@ -21,12 +20,18 @@ function MainController($scope,$location,$anchorScroll){
             return 'active';
         } else {
             return '';
-        }
+        };
     };
 
-    // $scope.$on('$locationChangeSuccess', function() {
-    //     console.log($location.hash());
-    //     $anchorScroll();
-    // });
+    angular.element(document).ready(function(){
+        console.log('Hello World');
+        var section = $location.hash();
+        // var element = angular.element(section);
+        // console.log(section,element);
+        console.log(section);
+        $timeout(function(){
+            $anchorScroll(section);
+        });
+    });
 
 }
