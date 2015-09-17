@@ -15,12 +15,10 @@ function LaboratoriesController($scope){
     };
 
     $scope.style = function(slots){
-        if (slots.length === 1){
-            return 'col-xs-12';
-        } else if (slots.length === 2){
-            return 'col-xs-6';
+        if (slots.length === 2){
+            return 'col-sm-6 col-xs-12';
         } else {
-            return 'col-xs-4';
+            return 'col-xs-12';
         };
     };
 
@@ -28,7 +26,7 @@ function LaboratoriesController($scope){
     {
         name: 'Saturdays',
         location: 'Imperial College London',
-        style: 'col-md-6 col-xs-12',
+        style: 'col-md-6 col-sm-12 col-xs-12',
         slots: [
             {
                 name: 'Afternoon',
@@ -45,7 +43,7 @@ function LaboratoriesController($scope){
     },{
         name: 'Weekdays',
         location: 'your local school',
-        style: 'col-md-3 col-xs-12',
+        style: 'col-md-3 col-sm-6 col-xs-12',
         slots: [
             {
                 name: 'After-School',
@@ -57,7 +55,7 @@ function LaboratoriesController($scope){
     },{
         name: 'Workshop',
         location: 'your local school',
-        style: 'col-md-3 col-xs-12',
+        style: 'col-md-3 col-sm-6 col-xs-12',
         slots: [
             {
                 name: 'During-School',

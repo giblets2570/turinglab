@@ -9,7 +9,7 @@
             <div class="turing-lab white">
                 <h3>{{lab.name}}</h3>
                 <p class="lead">@ {{lab.location}}</p>
-                <div class="lab-slots col-xs-12">
+                <div class="row lab-slots">
                     <div class="lab-slot" ng-class="style(lab.slots)" ng-repeat="slot in lab.slots">
                         <div class="lab-sphere">
                             <div class="lab-sphere-text vertical-center">
@@ -18,14 +18,16 @@
                                 <p>{{slot.time}}</p>
                             </div>
                         </div>
-                        <div class="lab-prices col-xs-12">
-                            <div class="lab-price col-xs-6" ng-repeat="price in slot.prices">
+                        <div class="lab-prices">
+                            <div class="lab-price" ng-repeat="price in slot.prices">
                                 <strong class="text-uppercase">{{price.number}}</strong>
                                 <h4>£{{price.cost}}</h4>
                                 <p>£{{price.hourly}} per hour</p>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="row lab-detail">
                     <h4 ng-if="lab.about">{{lab.about}}</h4>
                     <p ng-if="lab.detail">{{lab.detail}}</p>
                 </div>
