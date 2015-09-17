@@ -40,26 +40,63 @@ module.exports = function(grunt) {
       }
     },
     usemin: {
-      html: ['public/dist/**/*.html'],
-      css: ['public/dist/**/*.css'],
-      js: ['public/dist/**/*.js'],
+      html: ['dist/**/*.html'],
+      css: ['dist/**/*.css'],
+      js: ['dist/**/*.js'],
       options: {
         dirs: ['dist'],
         assetsDirs: ['public']
       }
     },
 
+    // Package all the html partials into a single javascript payload
+    ngtemplates: {
+      options: {
+        // This should be the name of your apps angular module
+        module: 'turingWeb',
+        htmlmin: {
+          collapseBooleanAttributes: true,
+          collapseWhitespace: true,
+          removeAttributeQuotes: true,
+          removeEmptyAttributes: true,
+          removeRedundantAttributes: true,
+          removeScriptTypeAttributes: true,
+          removeStyleLinkTypeAttributes: true
+        },
+        usemin: 'public/app/app.modules.js'
+      },
+      main: {
+        cwd: 'public',
+        src: ['public/app/**/*.html'],
+        dest: '.tmp/templates.js'
+      },
+      tmp: {
+        cwd: '.tmp',
+        src: ['public/app/**/*.html'],
+        dest: '.tmp/tmp-templates.js'
+      }
+    },
+
     // Copy files into the distribution folder
     copy: {
       dist: {
-        expand: true,
-        dot: true,
-        cwd: 'public',
-        dest: 'public/dist',
-        src: [
-          'assets/images/*',
-          'index.html'
-        ]
+        files: [{
+          expand: true,
+          dot: true,
+          cwd: 'public',
+          dest: 'dist',
+          src: [
+            'assets/images/*',
+          ]
+        },{
+          expand: true,
+          dot: true,
+          cwd: 'views',
+          dest: 'dist',
+          src: [
+            'index.html'
+          ]
+        }]
       }
     },
 
@@ -87,6 +124,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-wiredep');
   grunt.loadNpmTasks('grunt-injector');
 
+  // angular templates
+  grunt.loadNpmTasks('grunt-angular-templates');
+
   // minification
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-concat');
@@ -101,11 +141,12 @@ module.exports = function(grunt) {
 
   grunt.registerTask('serve', ['wiredep','injector','express','watch']);
   grunt.registerTask('build', [
+    'copy',
     'useminPrepare',
+    'ngtemplates',
     'concat:generated',
     'cssmin:generated',
     'uglify:generated',
-    'copy',
     'usemin'
   ]);
 
