@@ -6,18 +6,18 @@ function TeachingController($scope){
 
     $scope.details = [
         {
-            title: 'Coding',
-            lines: [
-                'Coding is a fundamental skill in today\'s world, and is at the heart of all the projects undertaken.',
-                'We teach the basics of coding using a visual programming language - Scratch.',
-                'Children progress onto Python - a text based programming language used across a wide range of industries.'
-            ]
-        },{
             title: 'Curriculum',
             lines: [
                 'Projects are based on real-world scenarios closely linked to the National Curriculum pathways.',
                 'TuringLab avoids teaching concepts in isolation by using real world examples which children can relate to. This ensures that children understand why they are learning, not just what.',
                 'Integrating closely with the national curriculum complements children\'s learning at school while providing a foundation to explore exciting new projects.'
+            ]
+        },{
+            title: 'Coding',
+            lines: [
+                'Coding is a fundamental skill in today\'s world, and is at the heart of all the projects undertaken.',
+                'We teach the basics of coding using a visual programming language - Scratch.',
+                'Children progress onto Python - a text based programming language used across a wide range of industries.'
             ]
         },{
             title: 'Creativity',

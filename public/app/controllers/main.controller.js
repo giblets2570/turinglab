@@ -18,6 +18,7 @@ function MainController($scope,$location,$timeout,$anchorScroll){
     };
 
     $scope.navClass = function(name){
+        return '';
         if ($location.hash() == name){
             return 'active';
         } else {

@@ -24,6 +24,21 @@ function LaboratoriesController($scope){
 
     $scope.labs = [
     {
+        name: 'Weekdays',
+        location: 'your local school',
+        style: 'col-md-3 col-sm-6 col-xs-12',
+        slots: [
+            {
+                name: 'After-School',
+                content: 'KS3 & Python',
+                time: '2 hours',
+                prices: {
+                    left: Price(150,2,10),
+                    right: Price(20,2,1)
+                }
+            }
+        ]
+    },{
         name: 'Saturdays',
         location: 'Imperial College London',
         style: 'col-md-6 col-sm-12 col-xs-12',
@@ -47,22 +62,7 @@ function LaboratoriesController($scope){
             }
         ]
     },{
-        name: 'Weekdays',
-        location: 'your local school',
-        style: 'col-md-3 col-sm-6 col-xs-12',
-        slots: [
-            {
-                name: 'After-School',
-                content: 'KS3 & Python',
-                time: '2 hours',
-                prices: {
-                    left: Price(150,2,10),
-                    right: Price(20,2,1)
-                }
-            }
-        ]
-    },{
-        name: 'Workshop',
+        name: 'Workshops',
         location: 'your local school',
         style: 'col-md-3 col-sm-6 col-xs-12',
         slots: [
